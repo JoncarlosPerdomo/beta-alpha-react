@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/beta-alpha-react/static/css/main.fabaf48e.css",
+    "main.js": "/beta-alpha-react/static/js/main.c65c6af8.js",
+    "static/js/787.465b85b1.chunk.js": "/beta-alpha-react/static/js/787.465b85b1.chunk.js",
+    "static/media/blueBanner.png": "/beta-alpha-react/static/media/blueBanner.357fea22686b20384e16.png",
+    "static/media/josh.jpg": "/beta-alpha-react/static/media/josh.5fe706b3e3bbb0a74a6b.jpg",
+    "static/media/haresh.jpg": "/beta-alpha-react/static/media/haresh.cbcd671b1a8d8a8d4ba4.jpg",
+    "static/media/kush.jpg": "/beta-alpha-react/static/media/kush.73f59adeee397c7e6924.jpg",
+    "static/media/matt.jpg": "/beta-alpha-react/static/media/matt.92685a51a55aafcbeec9.jpg",
+    "static/media/justin.jpg": "/beta-alpha-react/static/media/justin.7f133ee8e6501e502ae7.jpg",
+    "static/media/shawn.jpg": "/beta-alpha-react/static/media/shawn.43a992e927491c93dd41.jpg",
+    "static/media/brotherhood.jpg": "/beta-alpha-react/static/media/brotherhood.2d4a99edff606ab3480c.jpg",
+    "static/media/pie.jpg": "/beta-alpha-react/static/media/pie.7033065e9773d7827ac2.jpg",
+    "static/media/thomas.jpg": "/beta-alpha-react/static/media/thomas.64aeb81ae277bbcaff20.jpg",
+    "static/media/rushCalander.jpg": "/beta-alpha-react/static/media/rushCalander.5b32c265a020cd7b09da.jpg",
+    "static/media/vishaal.jpg": "/beta-alpha-react/static/media/vishaal.0e410177ae9fe23bb157.jpg",
+    "static/media/star-shield.png": "/beta-alpha-react/static/media/star-shield.dd666c6005bf182d2fcd.png",
+    "static/media/chris.jpg": "/beta-alpha-react/static/media/chris.a1fe4373685855b4baff.jpg",
+    "static/media/dave.jpg": "/beta-alpha-react/static/media/dave.636e274053ba098c49a8.jpg",
+    "static/media/rob.jpg": "/beta-alpha-react/static/media/rob.3de18fa1021ad96dbb3c.jpg",
+    "static/media/jake.jpg": "/beta-alpha-react/static/media/jake.55cbee7de34b1e1c3bd2.jpg",
+    "static/media/logoName.png": "/beta-alpha-react/static/media/logoName.11eab70e167fb1489639.png",
+    "index.html": "/beta-alpha-react/index.html",
+    "main.fabaf48e.css.map": "/beta-alpha-react/static/css/main.fabaf48e.css.map",
+    "main.c65c6af8.js.map": "/beta-alpha-react/static/js/main.c65c6af8.js.map",
+    "787.465b85b1.chunk.js.map": "/beta-alpha-react/static/js/787.465b85b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fabaf48e.css",
+    "static/js/main.c65c6af8.js"
+  ]
+}
