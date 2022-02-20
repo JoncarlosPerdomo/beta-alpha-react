@@ -1,69 +1,81 @@
 import "./App.css";
+import justin from "./images/ec/justin.jpg";
+import matt from "./images/ec/matt.jpg";
+import kush from "./images/ec/kush.jpg";
+import thomas from "./images/ec/thomas.jpg";
+import rob from "./images/ec/rob.jpg";
+import vishaal from "./images/ec/vishaal.jpg";
+import shawn from "./images/ec/shawn.jpg";
+import dave from "./images/ec/dave.jpg";
+import haresh from "./images/ec/haresh.jpg";
+import josh from "./images/ec/josh.jpg";
+
+import jake from "./images/ec/jake.jpg";
+
 import logoName from "./images/logoName.png";
+import brotherhood from "./images/brotherhood.jpg";
+import rushCalander from "./images/rushCalander.jpg";
+import pie from "./images/pie.jpg";
+// import logoName from "./images/logoName.png";
 function App() {
   return (
     <div>
-      {/* navbar section */}
-      <nav className="fixed w-full px-0 py-10 bg-yellow-500">
-        <div className="flex justify-between mx-20 center">
-          <div className="mr-250">
-            <a className="text-white" href="#">
-              <img src={logoName} alt="logo" height={50} width={200} />
+      <nav className="navbar">
+        <div className="max-width">
+          <div className="logo">
+            <a href="#">
+              <img src={logoName} alt="logo" height="50px" />
             </a>
           </div>
-          <ul className="text-white ">
-            <li className="inline-block list-none">
-              <a href="#home" className="block ml-[25px]">
+          <ul className="menu">
+            <li>
+              <a href="#home" className="menu-btn">
                 Home
               </a>
             </li>
-            <li className="inline-block list-none">
-              <a href="#about" className="block ml-[25px]">
+            <li>
+              <a href="#about" className="menu-btn">
                 About
               </a>
             </li>
-            <li className="inline-block list-none">
-              <a href="#events" className="block ml-[25px]">
+            <li>
+              <a href="#events" className="menu-btn">
                 Events
               </a>
             </li>
-            <li className="inline-block list-none">
-              <a href="#abex" className="block ml-[25px]">
+            <li>
+              <a href="#abex" className="menu-btn">
                 Abex
               </a>
             </li>
-            <li className="inline-block list-none">
-              <a href="#ec" className="block ml-[25px]">
+            <li>
+              <a href="#ec" className="menu-btn">
                 Exec
               </a>
             </li>
-            <li className="inline-block list-none">
-              <a href="#alumni" className="block ml-[25px]">
+            <li>
+              <a href="#alumni" className="menu-btn">
                 Alumni
               </a>
             </li>
           </ul>
+          <div className="menu-btn">
+            <i className="fas fa-bars" aria-hidden="true"></i>
+          </div>
         </div>
       </nav>
 
-      {/* Home Section */}
-      <section>
-        <div className="bg-fixed">
-          <img src={require("./blueBanner.png")} alt="BLUE-BANNER" />
-          <p>HERE</p>
-        </div>
-      </section>
+      <section className="home parralax" id="home"></section>
 
-      {/* About Section */}
-      <section>
-        <div>
-          <h2>Beta Alpha</h2>
-          <div>
-            <div>
-              <img src="images/brotherhood.js" alt="star-shield" />
+      <section className="about" id="about">
+        <div className="max-width">
+          <h2 className="title">Beta Alpha</h2>
+          <div className="about-content">
+            <div className="column left">
+              <img src={brotherhood} alt="star-shield" />
             </div>
-            <div>
-              <div>
+            <div className="cloumn right">
+              <div className="text">
                 Pi <span>Kappa</span> Phi
               </div>
               <p>
@@ -89,50 +101,254 @@ function App() {
         </div>
       </section>
 
-      {/* Event Section */}
-      <section>
-        <div>
-          <h2>Upcoming Events</h2>
-          <div>
-            <div>
-              <a href="#">
-                <div>
-                  <i></i>
-                  <div>48hr Bikethon</div>
+      <section className="events" id="events">
+        <div className="max-width">
+          <h2 className="title">Upcoming Events</h2>
+          <div className="proj-content">
+            <div className="card">
+              <a href="#" target="_blank">
+                <div className="box">
+                  <i className="bi bi-bicycle"></i>
+                  <div className="text">48hr Bikethon</div>
                   <p>February 26</p>
                   <p>Brothers will ride a bike for 48hr for the Ability Experience</p>
                 </div>
               </a>
-
-              <div>
-                <a href="#">
-                  <div>
-                    <i></i>
-                    <div>Video Game Night</div>
-                    <p>February 29</p>
-                    <p>Come, hang, and Play</p>
-                  </div>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                  <div>
-                    <i></i>
-                    <div>Friendship 5k</div>
-                    <p>March 1</p>
-                    <p>5k in central park to raise money for the Ability Experience</p>
-                  </div>
-                </a>
-              </div>
-
-              <div>
-                <a href="images/rush-calender.jpg">More Events</a>
-              </div>
+            </div>
+            <div className="card">
+              <a href="#" target="_blank">
+                <div className="box">
+                  <i className="fa-solid fa-gamepad"></i>
+                  <div className="text">Video Game Night</div>
+                  <p>February 29</p>
+                  <p>Come, hang, and Play</p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="#" target="_blank">
+                <div className="box">
+                  <i className="fa-solid fa-person-running"></i>
+                  <div className="text">Friendship 5k</div>
+                  <p>March 1</p>
+                  <p>5k in central park to raise money for the Ability Experience</p>
+                </div>
+              </a>
+            </div>
+            <div className="more">
+              <a href={rushCalander} target="_blank" rel="noreferrer">
+                More Events
+              </a>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="abex" id="abex">
+        <div className="max-width">
+          <h2 className="title"> The Ability Experience </h2>
+          <div className="abex-content">
+            <div className="column left">
+              <div className="text"> The Ability Experience </div>
+              <p>
+                The Ability Experience is an independent-nonprofit dedicated to aiding the 6.5 million citizens living with disabilities
+                across the United States. The Ability Experience works to create a community where the abilities of all people are equally
+                recognized and valued through inclusivity challenging society language and perception of individuals with disabilities.The
+                Pi Kappa Phi fraternity is honored to be able to support an organization that is dedicated to raising awareness,
+                fundraising, volunteering, and promoting the message that disability does not mean inability.
+              </p>
+              <p>
+                Here at Beta Alpha NJIT, our brothers run numerous fundraising events to support The Ability Experience nationally,
+                including Bike-a-thons, Pie-a-PiKapp, and others. Additionally, we look to contribute to any and all volunteer opportunities
+                in the community to give back to Newark and the surrounding areas. Finally, Pi Kapp runs events nationally with The Ability
+                Experience involving biking across Florida and the entire United States.
+              </p>
+              <a href="https://www.abilityexperience.org/" target="_blank" rel="noreferrer">
+                Ability Experience
+              </a>
+            </div>
+            <div className="column right">
+              <img src={pie} alt="abex" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="ec" id="ec">
+        <div className="max-width">
+          <h2 className="title"> Executive Council</h2>
+          <div className="carousel owl-carousel">
+            <div className="card">
+              <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Justin Andersen</div>
+                  <img src={justin} alt="justin" />
+                  <p>
+                    President
+                    <br />
+                    Spring 2019
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Matt Varghese</div>
+                  <img src={matt} alt="matt" />
+                  <p>
+                    Vice President
+                    <br />
+                    Fall 2019
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <div className="box">
+                <a href="mailto:kp673@njit.edu" target="_blank" rel="noreferrer">
+                  <div className="text">Kush Patel</div>
+                  <img src={kush} alt="kush" />
+                  <p>
+                    Treasurer
+                    <br />
+                    Fall 2019
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <a href="mailto:td273@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Thomas Dolalas</div>
+                  <img src={thomas} alt="thomas" />
+                  <p>
+                    Secretary
+                    <br /> Fall 2019
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:rc553@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Rob Camaano</div>
+                  <img src={rob} alt="rob" />
+                  <p>
+                    Warden
+                    <br /> Spring 2020
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:vs283@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Vishaal Anand</div>
+                  <img src={vishaal} alt="Vishaal" />
+                  <p>
+                    Historian
+                    <br /> Fall 2019
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:sm2665@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Shawn Mageean</div>
+                  <img src={shawn} alt="pic" />
+                  <p>
+                    Chaplain
+                    <br /> Fall 2019
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:ds923@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">David Schiettino</div>
+                  <img src={dave} alt="dave" />
+                  <p>
+                    Philanthropy Chair
+                    <br /> Spring 2020
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:hhs2@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Haresh Shiwcharan</div>
+                  <img src={haresh} alt="haresh" />
+                  <p>
+                    Risk Management Chair
+                    <br /> Spring 2021
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div className="card">
+              <a href="https://youtu.be/dF6SGPBFSnQ?t=27">
+                <a href="mailto:jmb222@njit.edu" target="_blank" rel="noreferrer">
+                  <div className="box">
+                    <div className="text">Josh Blatt</div>
+                    <img src={josh} alt="josh" />
+                    <p>
+                      Social Chair
+                      <br /> Spring 2021
+                    </p>
+                  </div>
+                </a>
+              </a>
+            </div>
+
+            <div className="card">
+              <a href="mailto:ccp25@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Chris Piezas</div>
+                  <img src="ec/chris.jpg" alt="chris" />
+                  <p>
+                    House Manager
+                    <br /> Spring 2020
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className="card">
+              <a href="mailto:jjd3@njit.edu" target="_blank" rel="noreferrer">
+                <div className="box">
+                  <div className="text">Jake Derzsak</div>
+                  <img src={jake} alt="jake" />
+                  <p>
+                    Standards Borad President
+                    <br /> Fall 2020
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="almni" id="alumni">
+        <div className="max-width">
+          <h2 className="title">Alumni</h2>
+          <div className="alumni-content">
+            <div className="text">Founders Day Tickets ($150)</div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <span>
+          Created By <a href="#">Kush Patel</a> | <span className="far fa-copyright">2022 All rights reserved.</span>
+        </span>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+      </footer>
     </div>
   );
 }
