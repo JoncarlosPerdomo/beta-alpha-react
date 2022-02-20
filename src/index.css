@@ -106,7 +106,6 @@ html {
 
 .home {
     display: flex;
-    background: url("images/blueBanner.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;

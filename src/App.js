@@ -53,7 +53,12 @@ function App() {
         </div>
       </nav>
 
-      <section className="home parralax" id="home"></section>
+      <section>
+        <div className="bg-fixed">
+          <img src={require("./images/blueBanner.png")} alt="BLUE-BANNER" />
+        </div>
+      </section>
+      {/* <section className="home parralax" id="home"></section> */}
 
       <section className="about" id="about">
         <div className="max-width">
