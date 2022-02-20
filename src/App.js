@@ -1,17 +1,5 @@
 import "./App.css";
-import justin from "./images/ec/justin.jpg";
-import matt from "./images/ec/matt.jpg";
-import kush from "./images/ec/kush.jpg";
-import thomas from "./images/ec/thomas.jpg";
-import rob from "./images/ec/rob.jpg";
-import vishaal from "./images/ec/vishaal.jpg";
-import shawn from "./images/ec/shawn.jpg";
-import dave from "./images/ec/dave.jpg";
-import haresh from "./images/ec/haresh.jpg";
-import josh from "./images/ec/josh.jpg";
-
-import jake from "./images/ec/jake.jpg";
-
+import ecImages from "./images/ec";
 import logoName from "./images/logoName.png";
 import brotherhood from "./images/brotherhood.jpg";
 import rushCalander from "./images/rushCalander.jpg";
@@ -182,7 +170,7 @@ function App() {
               <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Justin Andersen</div>
-                  <img src={justin} alt="justin" />
+                  <img src={ecImages.justin} alt="justin" />
                   <p>
                     President
                     <br />
@@ -195,7 +183,7 @@ function App() {
               <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Matt Varghese</div>
-                  <img src={matt} alt="matt" />
+                  <img src={ecImages.matt} alt="matt" />
                   <p>
                     Vice President
                     <br />
@@ -208,7 +196,7 @@ function App() {
               <div className="box">
                 <a href="mailto:kp673@njit.edu" target="_blank" rel="noreferrer">
                   <div className="text">Kush Patel</div>
-                  <img src={kush} alt="kush" />
+                  <img src={ecImages.kush} alt="kush" />
                   <p>
                     Treasurer
                     <br />
@@ -221,7 +209,7 @@ function App() {
               <a href="mailto:td273@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Thomas Dolalas</div>
-                  <img src={thomas} alt="thomas" />
+                  <img src={ecImages.thomas} alt="thomas" />
                   <p>
                     Secretary
                     <br /> Fall 2019
@@ -233,7 +221,7 @@ function App() {
               <a href="mailto:rc553@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Rob Camaano</div>
-                  <img src={rob} alt="rob" />
+                  <img src={ecImages.rob} alt="rob" />
                   <p>
                     Warden
                     <br /> Spring 2020
@@ -245,7 +233,7 @@ function App() {
               <a href="mailto:vs283@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Vishaal Anand</div>
-                  <img src={vishaal} alt="Vishaal" />
+                  <img src={ecImages.vishaal} alt="Vishaal" />
                   <p>
                     Historian
                     <br /> Fall 2019
@@ -257,7 +245,7 @@ function App() {
               <a href="mailto:sm2665@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Shawn Mageean</div>
-                  <img src={shawn} alt="pic" />
+                  <img src={ecImages.shawn} alt="pic" />
                   <p>
                     Chaplain
                     <br /> Fall 2019
@@ -269,7 +257,7 @@ function App() {
               <a href="mailto:ds923@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">David Schiettino</div>
-                  <img src={dave} alt="dave" />
+                  <img src={ecImages.dave} alt="dave" />
                   <p>
                     Philanthropy Chair
                     <br /> Spring 2020
@@ -281,7 +269,7 @@ function App() {
               <a href="mailto:hhs2@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Haresh Shiwcharan</div>
-                  <img src={haresh} alt="haresh" />
+                  <img src={ecImages.haresh} alt="haresh" />
                   <p>
                     Risk Management Chair
                     <br /> Spring 2021
@@ -295,7 +283,7 @@ function App() {
                 <a href="mailto:jmb222@njit.edu" target="_blank" rel="noreferrer">
                   <div className="box">
                     <div className="text">Josh Blatt</div>
-                    <img src={josh} alt="josh" />
+                    <img src={ecImages.josh} alt="josh" />
                     <p>
                       Social Chair
                       <br /> Spring 2021
@@ -309,7 +297,7 @@ function App() {
               <a href="mailto:ccp25@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Chris Piezas</div>
-                  <img src="ec/chris.jpg" alt="chris" />
+                  <img src={ecImages.chris} alt="chris" />
                   <p>
                     House Manager
                     <br /> Spring 2020
@@ -321,7 +309,7 @@ function App() {
               <a href="mailto:jjd3@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Jake Derzsak</div>
-                  <img src={jake} alt="jake" />
+                  <img src={ecImages.jake} alt="jake" />
                   <p>
                     Standards Borad President
                     <br /> Fall 2020
