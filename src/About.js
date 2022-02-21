@@ -1,11 +1,13 @@
-import brotherhood from "./images/brotherhood.avif";
+import brotherhood from "./images/brotherhood.jpg";
 
 export const About = () => {
   return (
     <section className="about" id="about">
-      <h2 className="py-4 text-4xl font-medium text-center font-grandstander">Beta Alpha</h2>
+      <h2 className="py-4 text-center font-grandstander text-4xl font-medium">Beta Alpha</h2>
       <img src={brotherhood} className="mx-auto w-11/12 self-center rounded-[50px]" loading="lazy" />
-      Pi <span>Kappa</span> Phi
+      <div className="font-montserrat font-medium">
+        Pi <span>Kappa</span> Phi
+      </div>
       <p>
         Pi Kappa Phi was founded by exceptional men who chose to lead. For more than a century, we have stayed true to our roots, developing
         the next generation of servant leaders who put service before self and work to improve the world around them. Here at the{" "}

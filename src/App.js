@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <div className="pt-16" id="home">
-        <img src={require("./images/blueBanner.avif")} alt="BLUE-BANNER" />
+        <img src={require("./images/blueBanner.jpg")} alt="BLUE-BANNER" />
       </div>
       {/* <section className="home parralax" id="home"></section> */}
 

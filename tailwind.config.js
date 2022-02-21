@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         grandstander: ['"Grandstander"', "cursive"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
