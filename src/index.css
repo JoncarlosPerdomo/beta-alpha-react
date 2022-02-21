@@ -2,773 +2,427 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-
-/* navbar styling */
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 10px 0;
-    font-family: "Grandstander", cursive;
-    transition: all 0.3s ease;
-    background-color: #E7A614B3;
-}
-
-.navbar.sticky {
-    padding: 15px 0;
-    background: #E7A614;
-}
-
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo {
-    margin-right: 250px;
-}
-
-.navbar .logo a {
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .logo a span {
-    color: #E7A614;
-}
-
-.navbar.sticky .logo a span {
-    color: #005596;
-    transition: all 0.3s ease;
-}
-
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a {
-    display: block;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover {
-    color: #005596;
-}
-
-.navbar.sticky .menu li a:hover {
-    color: #005596;
-    transition: all 0.3s ease;
-}
-
-
-/* menu button styling */
-
-.menu-btn {
-    color: white;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/* home section styling */
-
-.home {
-    display: flex;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: white;
-    min-height: 500px;
-    font-family: "Grandstander", cursive;
-}
-
-
-/* .parallax {
-   
-} */
-
-.home .max-width {
-    margin: auto auto auto auto;
-    padding-left: 20%;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px
-}
-
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: #005596;
-    font-weight: 500;
-}
-
-.home .home-content a {
-    display: inline-block;
-    background: #E7A614;
-    color: white;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #E7A614;
-    transition: 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: gold;
-    background: none;
-}
-
-
-/* section styling */
-
-section {
-    padding: 100px 0px;
-}
-
-.about,
-.events,
-.abex,
-.ec,
-.alumni,
-.footer {
-    font-family: 'montserrat', sans-serif;
-}
-
-.about .about-content,
-.events .proj-content,
-.abex .abex-content,
-.alumni .alumni-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-section .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: "Grandstander", cursive;
-}
-
-section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: black;
-    transform: translateX(-50%);
-}
-
-section .title::after {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    font-size: 20px;
-    color: #005596;
-    padding: 5px;
-    background: white;
-    transform: translateX(-50%);
-}
-
-a {
-    text-decoration: none;
-}
-
-a:link,
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: white;
-}
-
-
-/* about section */
-
-.about .title::after {
-    content: "About Us";
-}
-
-.about .about-content .left {
-    width: 55%;
-}
-
-.about .about-content .left img {
-    height: 450px;
-    width: 550px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.about .about-content .right {
-    width: 45%;
-}
-
-.about .about-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .about-content .right .text span {
-    color: #005596
-}
-
-.about .about-content .right p {
-    text-align: justify
-}
-
-.about .about-content .right a {
-    display: inline-block;
-    background: #005596;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 7px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #005596;
-    transition: 0.3s ease;
-}
-
-.about .about-content .right a:hover {
-    color: #005596;
-    background: none;
-}
-
-
-/* events styling  */
-
-.events,
-.ec {
-    color: white;
-    background: #111;
-}
-
-.events .title::before,
-.ec .title::before {
-    background: white;
-}
-
-.events .title::after,
-.ec .title::after {
-    color: #E7A614;
-    background: #111;
-    content: "";
-}
-
-.events .proj-content .card {
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 5px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.events .proj-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.events .proj-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.events .proj-content .card i {
-    font-size: 50px;
-    color: #E7A614;
-    transition: color 0.3s ease;
-}
-
-.events .proj-content .card:hover i {
-    color: #fff;
-}
-
-.events .proj-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.events .proj-content .more a {
-    display: inline-block;
-    background: none;
-    color: #E7A614;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 20px 50px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #E7A614;
-    transition: 0.3s ease;
-}
-
-.events .proj-content .more a:hover {
-    color: white;
-    background: #005596;
-    border-color: #005596;
-}
-
-
-/* abex Styling*/
-
-.abex .title::after {
-    content: "The Philanthropy";
-}
-
-.abex .abex-content .left {
-    width: 45%;
-}
-
-.abex .abex-content .left .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.abex .abex-content .left .text span {
-    color: #005596
-}
-
-.abex .abex-content .left p {
-    text-align: justify
-}
-
-.abex .abex-content .left a {
-    display: inline-block;
-    background: #005596;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 7px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #005596;
-    transition: 0.3s ease;
-}
-
-.abex .abex-content .left a:hover {
-    color: #005596;
-    background: none;
-}
-
-.abex .abex-content .right {
-    width: 55%;
-}
-
-.abex .abex-content .right img {
-    height: 450px;
-    width: 550px;
-    object-fit: cover;
-    border-radius: 50px;
-    margin-left: 100px;
-}
-
-
-/* ec styling */
-
-.ec .title::before {
-    width: 250px;
-}
-
-.ec .title::after {
-    content: "";
-}
-
-.ec .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.5s ease;
-}
-
-.ec .carousel .card:hover {
-    background: #005596;
-}
-
-.ec .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ec .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.ec .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #E7A614;
-    transition: all 0.5s ease;
-}
-
-.ec .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #E7A614 !important;
-    transition: all 0.5s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: #E7A614 !important;
-}
-
-
-/* alumni style */
-
-.alumni .title::after {
-    content: "Get in Touch";
-}
-
-.alumni .alumni-content .column {
-    width: calc(50% - 30px);
-}
-
-.alumni .alumni-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.alumni .alumni-content .left p {
-    text-align: justify;
-}
-
-.alumni .alumni-content .left .icons {
-    margin: 10px 0;
-}
-
-.alumni .alumni-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-
-.alumni .alumni-content .row .info {
-    margin-left: 30px;
-}
-
-.alumni .alumni-content .row i {
-    font-size: 25px;
-    color: #005596;
-}
-
-.alumni .alumni-content .info .head {
-    font-weight: 500;
-}
-
-.alumni .alumni-content .info .sub {
-    color: #333;
-}
-
-.alumni .right form .fields {
-    display: flex;
-}
-
-.alumni .right form .fields,
-.alumni .right form .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.alumni .right form .textarea {
-    height: 80px;
-    width: 100%;
-}
-
-.alumni .right form .name {
-    margin-right: 10px;
-}
-
-.alumni .right form .email {
-    margin-left: 10px;
-}
-
-.alumni .right form .field input,
-.alumni .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgray;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: "Grandstander", cursive;
-}
-
-.alumni .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-
-.alumni .right form .button {
-    height: 47px;
-    width: 170px;
-}
-
-.alumni .right form .button button {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #005596;
-    background: #005596;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.alumni .right form .button button:hover {
-    color: #005596;
-    background: none;
-}
-
-
-/* footer style */
-
-footer {
-    background: #111;
-    padding: 20px 23px;
-    color: #fff;
-}
-
-footer span a {
-    color: #005596;
-    text-decoration: none;
-}
-
-footer span a:hover {
-    text-decoration: underline;
-}
-
-
-/* responsive media query start */
-
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-
-@media only screen and (max-device-width: 690px) {
-    .parallax {
-        background-attachment: scroll;
+body,html{
+    width:100%;
+    height:100%
+}
+html{
+    scroll-behavior:smooth
+}
+.max-width{
+    max-width:1300px;
+    padding:0 80px;
+    margin:auto
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:999;
+    padding:10px 0;
+    font-family:Grandstander,cursive;
+    transition:all .3s ease;
+    background-color:#e7a614B3
+}
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+.home{
+    display:flex;
+    min-height:500px;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    color:#fff;
+    min-height:500px;
+    font-family:Grandstander,cursive
+}
+.home .max-width{
+    margin:auto auto auto auto;
+    padding-left:20%
+}
+.home .home-content .text-1{
+    font-size:27px
+}
+.home .home-content .text-2{
+    font-size:75px;
+    font-weight:600;
+    margin-left:-3px
+}
+.home .home-content .text-3{
+    font-size:40px;
+    margin:5px 0
+}
+.home .home-content .text-3 span{
+    color:#005596;
+    font-weight:500
+}
+.home .home-content a{
+    display:inline-block;
+    background:#e7a614;
+    color:#fff;
+    font-size:25px;
+    padding:12px 36px;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid #e7a614;
+    transition:.3s ease
+}
+.home .home-content a:hover{
+    color:gold;
+    background:0 0
+}
+section{
+    padding:100px 0
+}
+.abex,.about,.alumni,.ec,.events,.footer{
+    font-family:montserrat,sans-serif
+}
+.abex .abex-content,.about .about-content,.alumni .alumni-content,.events .proj-content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between
+}
+section .title{
+    position:relative;
+    text-align:center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+    font-family:Grandstander,cursive
+}
+section .title::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:#000;
+    transform:translateX(-50%)
+}
+section .title::after{
+    position:absolute;
+    bottom:-15px;
+    left:50%;
+    font-size:20px;
+    color:#005596;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%)
+}
+a{
+    text-decoration:none
+}
+a:link,a:visited{
+    color:#fff
+}
+a:hover{
+    color:#fff
+}
+.about .title::after{
+    content:"About Us"
+}
+.about .about-content .left{
+    width:55%
+}
+.about .about-content .left img{
+    height:450px;
+    width:550px;
+    object-fit:cover;
+    border-radius:50px
+}
+.about .about-content .right{
+    width:45%
+}
+.about .about-content .right .text{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:10px
+}
+.about .about-content .right .text span{
+    color:#005596
+}
+.about .about-content .right p{
+    text-align:justify
+}
+.about .about-content .right a{
+    display:inline-block;
+    background:#005596;
+    color:#fff;
+    font-size:20px;
+    font-weight:500;
+    padding:7px 30px;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid #005596;
+    transition:.3s ease
+}
+.about .about-content .right a:hover{
+    color:#005596;
+    background:0 0
+}
+.ec,.events{
+    color:#fff;
+    background:#111
+}
+.ec .title::before,.events .title::before{
+    background:#fff
+}
+.ec .title::after,.events .title::after{
+    color:#e7a614;
+    background:#111;
+    content:""
+}
+.events .proj-content .card{
+    width:calc(33% - 20px);
+    background:#222;
+    text-align:center;
+    border-radius:5px;
+    padding:20px 25px;
+    cursor:pointer;
+    transition:all .3s ease
+}
+.events .proj-content .card .box{
+    transition:all .3s ease
+}
+.events .proj-content .card:hover .box{
+    transform:scale(1.05)
+}
+.events .proj-content .card i{
+    font-size:50px;
+    color:#e7a614;
+    transition:color .3s ease
+}
+.events .proj-content .card:hover i{
+    color:#fff
+}
+.events .proj-content .card .text{
+    font-size:25px;
+    font-weight:500;
+    margin:10px 0 7px 0
+}
+.events .proj-content .more a{
+    display:inline-block;
+    background:0 0;
+    color:#e7a614;
+    font-size:25px;
+    font-weight:500;
+    padding:20px 50px;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid #e7a614;
+    transition:.3s ease
+}
+.events .proj-content .more a:hover{
+    color:#fff;
+    background:#005596;
+    border-color:#005596
+}
+.abex .title::after{
+    content:"The Philanthropy"
+}
+.abex .abex-content .left{
+    width:45%
+}
+.abex .abex-content .left .text{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:10px
+}
+.abex .abex-content .left .text span{
+    color:#005596
+}
+.abex .abex-content .left p{
+    text-align:justify
+}
+.abex .abex-content .left a{
+    display:inline-block;
+    background:#005596;
+    color:#fff;
+    font-size:20px;
+    font-weight:500;
+    padding:7px 30px;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid #005596;
+    transition:.3s ease
+}
+.abex .abex-content .left a:hover{
+    color:#005596;
+    background:0 0
+}
+.abex .abex-content .right{
+    width:55%
+}
+.abex .abex-content .right img{
+    height:450px;
+    width:550px;
+    object-fit:cover;
+    border-radius:50px;
+    margin-left:100px
+}
+.ec .title::before{
+    width:250px
+}
+.ec .title::after{
+    content:""
+}
+.ec .carousel .card{
+    background:#222;
+    border-radius:6px;
+    padding:25px 35px;
+    text-align:center;
+    transition:all .5s ease
+}
+.ec .carousel .card:hover{
+    background:#005596
+}
+.ec .carousel .card .box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center
+}
+.ec .carousel .card .text{
+    font-size:25px;
+    font-weight:500;
+    margin:10px 0 7px 0
+}
+.ec .carousel .card img{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #e7a614;
+    transition:all .5s ease
+}
+.ec .carousel .card:hover img{
+    border-color:#fff
+}
+.alumni .title::after{
+    content:"Get in Touch"
+}
+.alumni .alumni-content .column{
+    width:calc(50% - 30px)
+}
+.alumni .alumni-content .text{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px
+}
+.alumni .alumni-content .left p{
+    text-align:justify
+}
+footer{
+    background:#111;
+    padding:20px 23px;
+    color:#fff
+}
+footer span a{
+    color:#005596;
+    text-decoration:none
+}
+footer span a:hover{
+    text-decoration:underline
+}
+@media (max-width:1200px){
+    .home .max-width{
+        margin-left:0;
+        background:url(images/star-shield.png)
     }
 }
-
-@media(max-width:1200px) {
-    .home .max-width {
-        margin-left: 0px;
-        background: url("images/star-shield.png");
+@media (max-width:1105px){
+    .abex .abex-content .right img,.about .about-content .left img{
+        height:500px;
+        width:600px
     }
 }
-
-@media(max-width:1105px) {
-    .about .about-content .left img,
-    .abex .abex-content .right img {
-        height: 500px;
-        width: 600px;
+@media (max-width:991px){
+    .max-width{
+        padding:0 50px
     }
 }
-
-@media(max-width:991px) {
-    .max-width {
-        padding: 0 50px;
+@media (max-width:947px){
+    .home{
+        background-image:url(images/star-shield.png);
+        background-size:100% 75%
+    }
+    .home .home-content .text-2{
+        font-size:70px
+    }
+    .home .home-content .text-3{
+        font-size:35px
+    }
+    .abex .abex-content .column,.about .about-content .column{
+        width:100%
+    }
+    .abex .abex-content .right,.about .about-content .left{
+        display:flex;
+        justify-content:center;
+        margin:0 auto 60px
+    }
+    .abex .abex-content .left,.about .about-content .right{
+        flex:100%
+    }
+    .events .proj-content .card{
+        width:calc(50% - 10px);
+        margin-bottom:20px
+    }
+    .events .proj-content .more{
+        width:100%;
+        margin-bottom:20px
+    }
+    .abex .abex-content .column,.alumni .alumni-content .column{
+        width:100%;
+        margin-bottom:35px
+    }
+    .abex .abex-content .right img{
+        width:100%;
+        height:100%;
+        margin-left:0
+    }
+    .about .about-content .left img{
+        height:100%;
+        width:100%
     }
 }
-
-@media(max-width:947px) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
+@media (max-width:690px){
+    .max-width{
+        padding:0 23px
     }
-    .menu-btn i.active:before {
-        content: "\f00d";
+    .home{
+        background-image:url(images/star-shield.png);
+        background-size:100% 60%
     }
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #005596;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
+    .home .home-content .text-2{
+        font-size:60px
     }
-    .navbar .menu.active {
-        left: 0;
+    .home .home-content .text-3{
+        font-size:32px
     }
-    .navbar .menu li {
-        display: block;
+    .home .home-content a{
+        font-size:20px;
+        padding:8px 20px
     }
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home {
-        background-image: url("images/star-shield.png");
-        background-size: 100% 75%;
-    }
-    .home .home-content .text-2 {
-        font-size: 70px;
-    }
-    .home .home-content .text-3 {
-        font-size: 35px;
-    }
-    .about .about-content .column,
-    .abex .abex-content .column {
-        width: 100%;
-    }
-    .about .about-content .left,
-    .abex .abex-content .right {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right,
-    .abex .abex-content .left {
-        flex: 100%;
-    }
-    .events .proj-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .events .proj-content .more {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .abex .abex-content .column,
-    .alumni .alumni-content .column {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-    .abex .abex-content .right img {
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
-        /* justify-content: center; */
-    }
-    .about .about-content .left img {
-        height: 100%;
-        width: 100%;
+    .events .proj-content .card{
+        width:100%
     }
 }
-
-@media(max-width:690px) {
-    .navbar .logo img {
-        width: 100px;
+@media (max-width:500px){
+    .home .home-content .text-2{
+        font-size:50px
     }
-    .max-width {
-        padding: 0 23px;
+    .home .home-content .text-3{
+        font-size:27px
     }
-    .home {
-        background-image: url("images/star-shield.png");
-        background-size: 100% 60%;
-    }
-    .home .home-content .text-2 {
-        font-size: 60px;
-    }
-    .home .home-content .text-3 {
-        font-size: 32px;
-    }
-    .home .home-content a {
-        font-size: 20px;
-        padding: 8px 20px;
-    }
-    .events .proj-content .card {
-        width: 100%;
-    }
-}
-
-@media(max-width:500px) {
-    .home .home-content .text-2 {
-        font-size: 50px;
-    }
-    .home .home-content .text-3 {
-        font-size: 27px;
-    }
-    .home {
-        background-image: url("images/star-shield.png");
-        background-size: 100% 50%;
+    .home{
+        background-image:url(images/star-shield.png);
+        background-size:100% 50%
     }
 }
