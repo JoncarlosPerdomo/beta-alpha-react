@@ -1,6 +1,5 @@
 import "./App.css";
 import ecImages from "./images/ec";
-import logoName from "./images/logoName.png";
 import brotherhood from "./images/brotherhood.jpg";
 import rushCalander from "./images/rushCalander.jpg";
 import pie from "./images/pie.jpg";
@@ -10,51 +9,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      <nav className="navbar">
-        <div className="max-width">
-          <div className="logo">
-            <a href="#">
-              <img src={logoName} alt="logo" height="50px" />
-            </a>
-          </div>
-          <ul className="menu">
-            <li>
-              <a href="#home" className="menu-btn">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="menu-btn">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#events" className="menu-btn">
-                Events
-              </a>
-            </li>
-            <li>
-              <a href="#abex" className="menu-btn">
-                Abex
-              </a>
-            </li>
-            <li>
-              <a href="#ec" className="menu-btn">
-                Exec
-              </a>
-            </li>
-            <li>
-              <a href="#alumni" className="menu-btn">
-                Alumni
-              </a>
-            </li>
-          </ul>
-          <div className="menu-btn">
-            <i className="fas fa-bars" aria-hidden="true"></i>
-          </div>
-        </div>
-      </nav>
-
       <section>
         <div className="bg-fixed">
           <img src={require("./images/blueBanner.png")} alt="BLUE-BANNER" />
