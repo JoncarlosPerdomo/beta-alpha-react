@@ -1,4 +1,4 @@
-import rushCalander from "./images/rushCalander.jpg";
+import rushCalander from "./images/rushCalander.avif";
 
 export const Events = () => {
   return (

@@ -1,4 +1,4 @@
-import pie from "./images/pie.jpg";
+import pie from "./images/pie.avif";
 
 export const Abex = () => {
   return (

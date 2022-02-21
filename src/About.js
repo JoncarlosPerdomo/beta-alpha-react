@@ -1,4 +1,4 @@
-import brotherhood from "./images/brotherhood.jpg";
+import brotherhood from "./images/brotherhood.avif";
 
 export const About = () => {
   return (

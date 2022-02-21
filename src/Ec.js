@@ -10,7 +10,7 @@ export const Ec = () => {
             <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Justin Andersen</div>
-                <img src={ecImages.justin} alt="justin" />
+                <img src={ecImages.justin} alt="justin" loading="lazy" />
                 <p>
                   President
                   <br />
@@ -23,7 +23,7 @@ export const Ec = () => {
             <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Matt Varghese</div>
-                <img src={ecImages.matt} alt="matt" />
+                <img src={ecImages.matt} alt="matt" loading="lazy" />
                 <p>
                   Vice President
                   <br />
@@ -36,7 +36,7 @@ export const Ec = () => {
             <div className="box">
               <a href="mailto:kp673@njit.edu" target="_blank" rel="noreferrer">
                 <div className="text">Kush Patel</div>
-                <img src={ecImages.kush} alt="kush" />
+                <img src={ecImages.kush} alt="kush" loading="lazy" />
                 <p>
                   Treasurer
                   <br />
@@ -49,7 +49,7 @@ export const Ec = () => {
             <a href="mailto:td273@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Thomas Dolalas</div>
-                <img src={ecImages.thomas} alt="thomas" />
+                <img src={ecImages.thomas} alt="thomas" loading="lazy" />
                 <p>
                   Secretary
                   <br /> Fall 2019
@@ -61,7 +61,7 @@ export const Ec = () => {
             <a href="mailto:rc553@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Rob Camaano</div>
-                <img src={ecImages.rob} alt="rob" />
+                <img src={ecImages.rob} alt="rob" loading="lazy" />
                 <p>
                   Warden
                   <br /> Spring 2020
@@ -73,7 +73,7 @@ export const Ec = () => {
             <a href="mailto:vs283@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Vishaal Anand</div>
-                <img src={ecImages.vishaal} alt="Vishaal" />
+                <img src={ecImages.vishaal} alt="Vishaal" loading="lazy" />
                 <p>
                   Historian
                   <br /> Fall 2019
@@ -85,7 +85,7 @@ export const Ec = () => {
             <a href="mailto:sm2665@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Shawn Mageean</div>
-                <img src={ecImages.shawn} alt="pic" />
+                <img src={ecImages.shawn} alt="pic" loading="lazy" />
                 <p>
                   Chaplain
                   <br /> Fall 2019
@@ -97,7 +97,7 @@ export const Ec = () => {
             <a href="mailto:ds923@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">David Schiettino</div>
-                <img src={ecImages.dave} alt="dave" />
+                <img src={ecImages.dave} alt="dave" loading="lazy" />
                 <p>
                   Philanthropy Chair
                   <br /> Spring 2020
@@ -109,7 +109,7 @@ export const Ec = () => {
             <a href="mailto:hhs2@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Haresh Shiwcharan</div>
-                <img src={ecImages.haresh} alt="haresh" />
+                <img src={ecImages.haresh} alt="haresh" loading="lazy" />
                 <p>
                   Risk Management Chair
                   <br /> Spring 2021
@@ -123,7 +123,7 @@ export const Ec = () => {
               <a href="mailto:jmb222@njit.edu" target="_blank" rel="noreferrer">
                 <div className="box">
                   <div className="text">Josh Blatt</div>
-                  <img src={ecImages.josh} alt="josh" />
+                  <img src={ecImages.josh} alt="josh" loading="lazy" />
                   <p>
                     Social Chair
                     <br /> Spring 2021
@@ -137,7 +137,7 @@ export const Ec = () => {
             <a href="mailto:ccp25@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Chris Piezas</div>
-                <img src={ecImages.chris} alt="chris" />
+                <img src={ecImages.chris} alt="chris" loading="lazy" />
                 <p>
                   House Manager
                   <br /> Spring 2020
@@ -149,7 +149,7 @@ export const Ec = () => {
             <a href="mailto:jjd3@njit.edu" target="_blank" rel="noreferrer">
               <div className="box">
                 <div className="text">Jake Derzsak</div>
-                <img src={ecImages.jake} alt="jake" />
+                <img src={ecImages.jake} alt="jake" loading="lazy" />
                 <p>
                   Standards Borad President
                   <br /> Fall 2020
