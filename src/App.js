@@ -5,9 +5,11 @@ import brotherhood from "./images/brotherhood.jpg";
 import rushCalander from "./images/rushCalander.jpg";
 import pie from "./images/pie.jpg";
 // import logoName from "./images/logoName.png";
+import NavBar from "./NavBar";
 function App() {
   return (
     <div>
+      <NavBar />
       <nav className="navbar">
         <div className="max-width">
           <div className="logo">
