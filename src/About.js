@@ -2,9 +2,9 @@ import brotherhood from "./images/brotherhood.jpg";
 
 export const About = () => {
   return (
-    <div className="font-montserrat" id="about">
+    <div className="mx-4 font-montserrat" id="about">
       <h2 className="py-4 text-4xl font-medium text-center font-grandstander">Beta Alpha</h2>
-      <img src={brotherhood} className="mx-auto w-11/12 self-center rounded-[50px]" loading="lazy" />
+      <img src={brotherhood} className="mx-auto  self-center rounded-[50px]" loading="lazy" />
       <div className="text-2xl font-semibold">
         Pi <span className="text-blue-700">Kappa</span> Phi
       </div>

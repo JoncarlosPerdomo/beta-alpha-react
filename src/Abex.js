@@ -2,7 +2,7 @@ import pie from "./images/pie.jpg";
 
 export const Abex = () => {
   return (
-    <section className="font-montserrat" id="abex">
+    <section className="mx-4 font-montserrat" id="abex">
       <h2 className="py-4 text-4xl font-medium text-center font-grandstander"> The Ability Experience </h2>
       <div className="column right">
         <img src={pie} alt="abex" className="mx-auto w-11/12 self-center rounded-[50px]" loading="lazy" />
@@ -22,11 +22,13 @@ export const Abex = () => {
         biking across Florida and the entire United States.
       </p>
 
-      <button className="py-3 m-10 text-xl font-medium text-white bg-blue-800 rounded-lg px-7">
-        <a href="https://www.abilityexperience.org/" target="_blank" rel="noreferrer">
-          Ability Experience
-        </a>
-      </button>
+      <div className="flex justify-center">
+        <button className="py-3 text-xl font-medium text-white bg-blue-800 rounded-lg px-7">
+          <a href="https://www.abilityexperience.org/" target="_blank" rel="noreferrer">
+            Ability Experience
+          </a>
+        </button>
+      </div>
     </section>
   );
 };

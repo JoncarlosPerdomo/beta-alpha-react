@@ -26,12 +26,10 @@ function App() {
 
       <Alumni />
 
-      <footer id="footer">
+      <footer id="footer" className="text-white bg-neutral-900">
         <span>
           Created By <a href="#">Joncarlos Perdomo & Kush Patel</a> | <span className="far fa-copyright">2022 All rights reserved.</span>
         </span>
-        <script src="jquery.min.js"></script>
-        <script src="owlcarousel/owl.carousel.min.js"></script>
       </footer>
     </div>
   );

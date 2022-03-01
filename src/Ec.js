@@ -6,7 +6,7 @@ import "glider-js/glider.min.css";
 export const Ec = () => {
   return (
     <section className="w-full text-white bg-neutral-900 px-14" id="ec">
-      <h2 className="py-6 text-4xl font-semibold text-center font-grandstande"> Executive Council</h2>
+      <h2 className="py-6 text-4xl font-semibold text-center font-grandstander"> Executive Council</h2>
 
       <Glider
         slidesToShow={1}
@@ -42,7 +42,7 @@ export const Ec = () => {
           </div>
         </div>
         <div className="mx-2 text-center rounded-lg aspect-square bg-neutral-800 ">
-          <div className="bg-green-400">
+          <div>
             <a href="mailto:mbv9@njit.edu" target="_blank" rel="noreferrer">
               <div className="py-4 text-2xl font-semibold">Matt Varghese</div>
               <img
