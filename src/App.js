@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="pt-16" id="home">
+      <div className="w-full pt-16" id="home">
         <img src={require("./images/blueBanner.jpg")} alt="BLUE-BANNER" />
       </div>
       {/* <section className="home parralax" id="home"></section> */}

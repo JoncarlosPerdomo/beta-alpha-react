@@ -5,7 +5,7 @@ import "glider-js/glider.min.css";
 
 export const Ec = () => {
   return (
-    <section className="text-white bg-neutral-900 px-14" id="ec">
+    <section className="w-full text-white bg-neutral-900 px-14" id="ec">
       <h2 className="py-6 text-4xl font-semibold text-center font-grandstande"> Executive Council</h2>
 
       <Glider

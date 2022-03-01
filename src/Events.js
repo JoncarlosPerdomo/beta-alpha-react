@@ -7,7 +7,7 @@ export const Events = () => {
     <section className="text-center text-white bg-stone-900 font-montserrat" id="events">
       <h2 className="py-6 text-4xl font-semibold text-center font-grandstander">Upcoming Events</h2>
       <div className="flex flex-col justify-center md:flex-row">
-        <div className="flex-none p-5 m-10 bg-gray-700 rounded-lg h-96 w-96">
+        <div className="flex-none p-5 m-10 rounded-lg h-96 w-96 bg-neutral-800">
           <a href="#" target="_blank">
             <GrBike className="w-20 h-20 mx-auto invert" />
             <div className="text-2xl ">48hr Bikethon</div>
@@ -15,7 +15,7 @@ export const Events = () => {
             <p>Brothers will ride a bike for 48hr for the Ability Experience</p>
           </a>
         </div>
-        <div className="flex-none p-5 m-10 bg-gray-700 rounded-lg h-96 w-96">
+        <div className="flex-none p-5 m-10 rounded-lg h-96 w-96 bg-neutral-800">
           <a href="#" target="_blank">
             <FaGamepad className="w-20 h-20 mx-auto" />
             <div className="text-2xl ">Video Game Night</div>
@@ -23,7 +23,7 @@ export const Events = () => {
             <p>Come hang and Play</p>
           </a>
         </div>
-        <div className="flex-none p-5 m-10 bg-gray-700 rounded-lg h-96 w-96">
+        <div className="flex-none p-5 m-10 rounded-lg h-96 w-96 bg-neutral-800">
           <a href="#" target="_blank">
             <FaRunning className="w-20 h-20 mx-auto" />
             <div className="text-2xl ">Friendship 5k</div>
